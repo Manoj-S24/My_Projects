@@ -1,0 +1,283 @@
+* {
+
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(14, 1, 1);
+    
+    color: white;
+    
+}
+header{
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: rgb(248, 5, 5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50px;
+    width: 100%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(100, 36, 204);
+    font-size: 1.1rem;
+}
+
+.left {
+    font-size: 1.56rem;
+
+}
+
+.mainsection {
+    display: flex;
+    justify-content: space-around;
+    margin: 23px 0;
+
+}
+
+.leftpart {
+
+    width: 30%;
+    font-size: 2.5rem;
+    margin: 110px 30px;
+    align-items: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.leftpart {
+    width: 30%;
+}
+
+.rightpart img {
+    height: 350px;
+    width: 290px;
+    border-radius: 320px;
+    background-color: red;
+    margin-top: 75px;
+    align-items: center;
+
+}
+
+.leftpart>div {
+    width: 90%;
+
+}
+
+.name {
+    color: rgb(245, 22, 22);
+}
+
+hr {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+
+.secondsection {
+
+    max-width: 78%;
+    margin: auto;
+
+}
+
+.greytxt {
+    font-size: 1rem;
+    color: rgb(131, 95, 95);
+}
+
+.box {
+    background-color: white;
+    height: 2px;
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 25px;
+    display: flex;
+}
+
+.verticle {
+    background-color: white;
+    margin: 0 130px;
+    height: 100px;
+    width: 1px;
+
+
+}
+
+.vtxt {
+    position: relative;
+    top: 105px;
+    font-size: 1.2rem;
+    width: 170px;
+    color: antiquewhite;
+}
+
+.vdesc {
+    position: relative;
+    top: 13px;
+    width: 160px;
+    font-size: 1rem;
+    color: rgb(131, 105, 105);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: 500px;
+    background-color: rgb(53, 41, 41);
+    padding: 50px 10px;
+}
+
+.footer ul li {
+    list-style: none;
+    padding: 3px;
+}
+
+.ftrtxt {
+    padding: 5px 10px;
+    font-size: 20px;
+    margin: 1px 25px;
+}
+
+.lst {
+    color: rgb(29, 27, 27);
+
+}
+
+.button .resume {
+    padding: 10px;
+    background-color: rgb(177, 4, 4);
+    color: whitesmoke;
+    border-radius: 15px;
+    border-color: aqua;
+}
+
+.button .github {
+    padding: 10px;
+    background-color: rgb(177, 8, 8);
+    color: whitesmoke;
+    border-radius: 20px;
+    border-color: aquamarine;
+}
+
+@media screen and (max-width:768px) {
+    main {
+        flex-direction: column;
+       
+        justify-content: center;
+        margin:0;
+        padding: 0;
+    }
+
+    .mainsection {
+        flex-direction: column;
+        margin:0;
+    }
+
+    nav {
+        flex-direction: column;
+        
+        justify-content: center;
+        align-items: center;
+        height: fit-content;
+        margin: 0;
+        
+
+    }
+
+    nav ul {
+        justify-content: center;
+
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .box {
+        flex-direction: column;
+        margin: 0 0;
+        
+    }
+
+    hr {
+            margin-right: 0;
+            margin-left: 0;
+        }
+    
+    .verticle{
+        height:340px;
+        position: relative;
+        left: -95px;
+    }
+    .vtxt{
+        margin-bottom: 65px;
+        margin-left: 10px;
+    }
+    header{
+        margin:0;
+        padding: 0;
+    }
+    .leftpart{
+        width:auto;
+        font-size:1.8rem;
+        margin: 0;
+        padding:5%;
+        text-align: center;
+      
+    
+    }
+    .rightpart{
+        justify-content: center;
+        margin: auto;
+    }
+    .secondsection{
+        margin-top: 32px;
+        margin-left: 10px;
+    }
+  
+}
+@media screen and (max-width:400px){
+    nav ul{
+        font-size: 0.8rem;
+    }
+    nav ul li{
+        margin: 0 10px;
+    }
+    .rightpart{
+        justify-content: center;
+        margin: auto;
+        align-items: center;
+        padding: 20px;
+        justify-content: space-around;
+
+    }
+    .rightpart img{
+        
+        margin:0;
+        
+    }
+}
